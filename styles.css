@@ -1,0 +1,129 @@
+.body {
+    display:flex;
+    flex: 1;
+    justify-content: center;
+    flex-flow: column wrap;
+    align-content: center;
+    align-items:stretch;
+    color: black; 
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    background-color: black;
+    
+}
+
+.footer {
+    display: flex inline-block;
+    justify-content: center;
+    flex-flow: column wrap;
+    align-content: center;
+    align-items: stretch;
+    color: pink;
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.menu{
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-around;
+    margin-top: 10px;
+    
+}
+
+.menuBorder{
+    border-bottom-left-radius: 8px;
+    border-style: solid;
+    border-color: blue;
+    border-width: 4px;
+    padding: 4px;
+    border-width: 2px;
+    text-decoration: none;
+}
+
+.menu a:hover{
+    font-style: italic;
+    font-weight: bold;
+    color: rgb(42, 134, 177);
+}
+
+.galeria{
+    margin-top: 25px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.imagenes{
+    display: inline-flex;
+    width: 300px;
+    height: 280px;
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 5px;
+    border-color: red;
+    border-bottom: 10px;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.imagenes img{
+    width: 300px;
+    height: 250px;
+    transition:all 500ms ease-in
+}
+
+.imagenes img:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+    filter:contrast(90%)
+}
+
+<!--Grid-->
+
+.headerGrid{
+    display: grid;
+    grid-template-columns: 1fr 200px;
+    grid-template-rows: 10px;
+    justify-items: stretch;
+    grid-template-areas: 
+    "header header"
+    "body"
+    "footer footer"
+    
+}
+
+.bodyGrid{
+    display: grid;
+    background-color: black;
+    grid-template-rows: 200px
+}
+
+.footerGrid{
+    display: grid;
+    grid-template-rows: 40px;
+    color: pink;
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    justify-items: stretch;
+}
+
+@media screen and (max-width: 800px) {
+    .headerGrid {
+    grid-template-columns: 100%
+    grid-template-rows: 10px;
+    background-color: pink;
+    }
+    .bodyGrid{
+        display: grid;
+        background-color: black;
+        grid-template-rows: 200px;
+        border-bottom-left-radius: 4px;
+        border-color: pink;
+        border-style: groove;
+}
