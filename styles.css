@@ -49,6 +49,7 @@
     font-style: italic;
     font-weight: bold;
     color: rgb(42, 134, 177);
+    transform: rotate(180deg);
 }
 
 .galeria{
@@ -113,12 +114,13 @@
     justify-items: stretch;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 800px)
     .headerGrid {
     grid-template-columns: 100%
     grid-template-rows: 10px;
     background-color: pink;
     }
+    
     .bodyGrid{
         display: grid;
         background-color: black;
